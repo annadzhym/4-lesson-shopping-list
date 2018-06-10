@@ -1,0 +1,86 @@
+* {
+    transition: all .1s ease-in;
+    font-family: “Trebuchet MS”, Trebuchet, Arial, sans-serif;
+}
+html:before {
+    content:"";
+    position:fixed;
+    z-index:-1;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    border:6px solid white;
+}
+
+html:after {
+    z-index:10;
+    top:auto;
+    border-width:0 0 10px;
+}
+
+body {
+    background-color: #3b3f45;
+}
+
+.main-header {
+    margin: 0 auto;
+    padding: 2px;
+    color: #eb7e7f;
+    background-color: #4a4f56;
+    text-align: center;
+}
+
+
+.shopping-list {
+    width: 500px;
+    margin: 0 auto;
+    color: white;
+}
+
+li {
+    background-color: #848498;
+    list-style-type: none;
+    padding: 15px;
+}
+
+.list-item:nth-child(2n) {
+    background-color: #7a7593;
+}
+
+.list-item:hover {
+    background-color: #5e6172;
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
+    cursor: pointer;
+}
+
+.list-item:active {
+    background-color: #eb7e7f;
+    text-decoration: line-through;
+}
+
+input:checked + span {
+    text-decoration: line-through;
+    color: lightgray;
+}
+
+.bon-appetit {
+    text-align: center;
+    width: 500px;
+    height: 50px;
+    margin: 0 auto;
+    color: #eb7e7f;
+    background-color: #4a4f56;
+}
+
+.brackets {
+    font-size: small;
+}
+.brackets:before {
+    content: "(";
+}
+
+.brackets:after {
+    content: ")";
+}
