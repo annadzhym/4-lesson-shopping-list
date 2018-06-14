@@ -1,11 +1,11 @@
 * {
     transition: all .1s ease-in;
-    font-family: “Trebuchet MS”, Trebuchet, Arial, sans-serif;
+    margin: 0 auto;
 }
 html:before {
     content:"";
     position:fixed;
-    z-index:-1;
+    z-index: -1;
     top:0;
     left:0;
     right:0;
@@ -20,11 +20,14 @@ html:after {
 }
 
 body {
+    font-family: “Trebuchet MS”, Trebuchet, Arial, sans-serif;
     background-color: #3b3f45;
 }
 
 .main-header {
-    margin: 0 auto;
+    display: block;
+    width: 40%;
+    margin-top: 1%;
     padding: 2px;
     color: #eb7e7f;
     background-color: #4a4f56;
@@ -33,9 +36,10 @@ body {
 
 
 .shopping-list {
-    width: 500px;
-    margin: 0 auto;
+    margin-top: 25px;
+    width: 40%;
     color: white;
+    padding: 0;
 }
 
 li {
@@ -65,15 +69,6 @@ input:checked + span {
     color: lightgray;
 }
 
-.bon-appetit {
-    text-align: center;
-    width: 500px;
-    height: 50px;
-    margin: 0 auto;
-    color: #eb7e7f;
-    background-color: #4a4f56;
-}
-
 .brackets {
     font-size: small;
 }
@@ -84,3 +79,15 @@ input:checked + span {
 .brackets:after {
     content: ")";
 }
+
+.bon-appetit {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    width: 40%;
+    margin-top: 25px;
+    color: #eb7e7f;
+    background-color: #4a4f56;
+}
+
+
